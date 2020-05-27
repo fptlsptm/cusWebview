@@ -1,0 +1,112 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cuswebview"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/9ad597a457af769d03c01e7ad0ca8a30/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.33.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/9ad597a457af769d03c01e7ad0ca8a30/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+14
+15    <application
+15-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:6:5-25:19
+16        android:name="com.cuswebview.MainApplication"
+16-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:7:7-38
+17        android:allowBackup="false"
+17-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:11:7-34
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:9:7-41
+21        android:label="@string/app_name"
+21-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:8:7-39
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:10:7-52
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme"
+24-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:12:7-38
+25        android:usesCleartextTraffic="true" >
+25-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/debug/AndroidManifest.xml:7:18-53
+26        <activity
+26-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:13:7-23:18
+27            android:name="com.cuswebview.MainActivity"
+27-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:14:9-37
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+28-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:16:9-86
+29            android:label="@string/app_name"
+29-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:15:9-41
+30            android:launchMode="singleTask"
+30-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:17:9-40
+31            android:windowSoftInputMode="adjustResize" >
+31-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:18:9-51
+32            <intent-filter>
+32-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:19:9-22:25
+33                <action android:name="android.intent.action.MAIN" />
+33-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:20:13-65
+33-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:20:21-62
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:21:13-73
+35-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:21:23-70
+36            </intent-filter>
+37        </activity>
+38        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+38-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:24:7-84
+38-->/Users/mac/Desktop/reactApp/cusWebview/android/app/src/main/AndroidManifest.xml:24:17-81
+39
+40        <provider
+40-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+41            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+41-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+42            android:authorities="com.cuswebview.fileprovider"
+42-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+43            android:exported="false"
+43-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+44            android:grantUriPermissions="true" >
+44-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+45            <meta-data
+45-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+46                android:name="android.support.FILE_PROVIDER_PATHS"
+46-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+47                android:resource="@xml/file_provider_paths" />
+47-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+48        </provider>
+49
+50        <service
+50-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:39
+51            android:name="com.burnweb.rnsendintent.RNSendIntentModule"
+51-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-71
+52            android:exported="true" />
+52-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-36
+53
+54        <provider
+54-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-24:20
+55            android:name="com.burnweb.rnsendintent.FileProvider"
+55-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-65
+56            android:authorities="com.cuswebview.fileprovider"
+56-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-64
+57            android:exported="false"
+57-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+58            android:grantUriPermissions="true" >
+58-->[:react-native-send-intent] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-send-intent/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-47
+59            <meta-data
+59-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+60                android:name="android.support.FILE_PROVIDER_PATHS"
+60-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+61                android:resource="@xml/file_paths" />
+61-->[:react-native-webview] /Users/mac/Desktop/reactApp/cusWebview/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+62        </provider>
+63    </application>
+64
+65</manifest>
