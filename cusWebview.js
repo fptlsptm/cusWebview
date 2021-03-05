@@ -32,25 +32,26 @@ export default function CusWebview(props){
         let rs = true;
         var SendIntentAndroid = require('react-native-send-intent');
         if (!wurl.startsWith("http://")&& !wurl.startsWith("https://")&& !wurl.startsWith("javascript:")){
-            
-            if(Platform.OS=="android"){
-                webViews.current.stopLoading();
+          //alert(wurl);        
+          if(Platform.OS=="android"){
                 SendIntentAndroid.openChromeIntent(wurl)
                     .then(isOpened => {
                     if(!isOpened){ToastAndroid.show('어플을 설치해주세요.', ToastAndroid.SHORT);}
-                });      
-            }else{
-     
-                const supported = Linking.canOpenURL(wurl);
-                if(supported){
-                    Linking.openURL(wurl);
-                }else{
-                    alert("어플을 설치해주세요");
+                });
+          }else{
+              if(wurl  == "about:blank"){
+                return false;
+              }
+
+              Linking.canOpenURL(wurl).then(supported => {
+                if (!supported) {
+                    alert('어플을 설치해주세요')
+                } else {
+                    return Linking.openURL(wurl);
                 }
-   
-            }
-            rs = false;
-            
+            }).catch(err => alert(e.url+'어플을 설치해주세요'));
+          }
+          rs = false;
         }
     
         return rs;
