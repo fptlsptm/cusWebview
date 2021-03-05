@@ -49,7 +49,7 @@ export default function CusWebview(props){
                 } else {
                     return Linking.openURL(wurl);
                 }
-            }).catch(err => alert(e.url+'어플을 설치해주세요'));
+            }).catch(err => alert('어플을 설치해주세요'));
           }
           rs = false;
         }
